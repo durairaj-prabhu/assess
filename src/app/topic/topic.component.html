@@ -1,0 +1,15 @@
+<div class="row  text-white " (click)="selectTopic()"
+    [ngClass]="{'bg-secondary':this.global.selectedTopic==i,'bg-transparent':this.global.selectedTopic!=i}">
+    <div class="col-4 col-lg-4 text-left colPad">
+        {{topic.title}}
+    </div>
+    <div class="col-8 col-lg-8 text-right colPad">
+        <button class="btn btn-primary btnPad"
+            [ngClass]="{'btn-warning':this.global.selectedTopic==i,'btn btn-warning':this.global.selectedTopic!=i}">{{topic.type}}
+        </button>&nbsp;
+        <app-app3 [global]="global" [days]="days" [i]="i"></app-app3>&nbsp;
+
+        <button class=" btn btn-outline-danger " (click)="rmvTopic()" style="border-radius: 20px;border: none;"> Delete
+        </button>&nbsp;
+    </div>
+</div>

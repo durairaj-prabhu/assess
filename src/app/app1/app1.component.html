@@ -1,0 +1,12 @@
+<button class="btn  text-left" style="width: 100%;"
+    [ngClass]="{'btn btn-light':this.global.seletedDay==i,'btn-light':this.global.seletedDay!=i}" (click)="curBtn(i)">
+
+    <div class="row">
+        <div class="col-6 col-lg-6">Day-{{day.number+1}}</div>
+        <div class="col-6 col-lg-6 text-right">
+            <button class="btn-secondary" (click)="delete()" style="border-radius: 20px;border: none;">delete</button>
+        </div>
+    </div>
+</button>
+<br>
+<br>

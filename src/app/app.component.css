@@ -1,0 +1,26 @@
+
+.secondbox {
+    background-color: transparent;
+}
+
+#cen{
+    margin-left: 400px;
+}
+.borderBottom {
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+a:hover {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.selected {
+    color: rgb(255, 81, 0);
+}
+
